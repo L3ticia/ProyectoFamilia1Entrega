@@ -1,0 +1,16 @@
+{% extends "index".html" %}
+
+{% block content %}
+
+<div class="container">
+    {% for m in menues %}
+        
+            <div class="card">
+
+                <h2>{{m.entrda}} {{m.bebidas}} </h2>
+               
+            </div>
+        
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "familiaresapp/padre.html" %}
+
+{% load static %}
+
+{% block %}
+
+
+    
+    {% if miFormulario.errors %}
+    <p style="color:red;"> estan mal los datos, revisar <p>
+    {% endif %}   
+
+    <form action="" method ="POST">{% csrf_token %}
+
+    <table>
+
+            {{miFormulario.as_table }}
+
+    <table>
+
+    <input type="submit" value= "Enviar">
+
+    </form>
+{% endblock %}
+
+
+<p>nombre:<input type= "text" name ="nombre" ></p>#
+<p>email:<input type= "text" name = "email"></p>#
+<input type="submit" value= "Enviar">#
